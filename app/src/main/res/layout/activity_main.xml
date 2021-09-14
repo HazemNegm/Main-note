@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242424"
+    app:layout_behavior="@string/fab_transformation_scrim_behavior"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="707dp"
+        android:layout_gravity="top" />
+
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="294dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="500dp"
+        android:gravity="center"
+        android:layout_marginLeft="55dp"
+        android:text="+"
+        android:textSize="30dp"
+        android:background="@drawable/add_button"
+        android:onClick="onClick"
+        tools:ignore="OnClick" />
+
+
+
+    <TextView
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:id="@+id/MyTasktextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Tasks" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
